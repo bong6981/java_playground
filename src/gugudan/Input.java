@@ -1,14 +1,25 @@
 package gugudan;
 import java.util.Scanner;
 
-public class Input {
-	public static String[] input(Scanner sc) {
-		System.out.println("출력하고 싶은 단과 몇번까지 곱할지? : ");
-		String input = sc.next();
-		String[] input_array = input.split(",");
+//public class Input {
+//	public static String[] input(Scanner sc) {
+//		System.out.println("출력하고 싶은 단과 몇번까지 곱할지? : ");
+//		String input = sc.next();
+//		String[] input_array = input.split(",");
+//
+//		return input_array;
+//		
+//	}
+//
+//}
 
-		return input_array;
-		
+
+	public class Input {
+		public static String[] input(Scanner sc) {
+			System.out.println("입력하고 싶은 단과 행은?: ");
+			String[] input = sc.nextLine().split(","); 
+			return input; 
+			
+			
+		}
 	}
-
-}
